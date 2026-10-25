@@ -1,0 +1,108 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+
+/* Clear floats after the columns */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  min-height: 100vh;
+}
+
+
+/* Create two equal columns that floats next to each other */
+.column {
+  width: 20%;
+  padding: 20px;
+  background-color: rgb(75, 75, 243);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), 
+    url(Tech.jpg);
+    
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  
+}
+
+.column h2 {
+  color: white;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.column ul {
+  list-style: none;
+  padding-left: 0;
+  color: white;
+}
+
+.column li {
+  margin-bottom: 10px;
+}
+
+.column img {
+  vertical-align: middle;
+  margin-right: 5px;
+}
+
+
+.column2 {
+  width: 80%;
+  padding: 3%;
+  background-color: #1e293bf6;
+  color: white;
+}
+
+.column2 h2 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  padding-bottom: 5px;
+}
+
+.column2 h3 {
+  margin-top: 15px;
+  margin-bottom: 5px;
+}
+
+.column2 p {
+  line-height: 1.6;
+}
+
+.column2 ul {
+  padding-left: 20px;
+}
+
+@media screen and (max-width: 768px){
+  .row{
+    flex-direction: column !important;
+  }
+  .column, .column2{
+    width: 100% !important;
+    
+  }
+  .column{
+    text-align: center !important;
+    
+  }
+  .column ul{
+    text-align: left;
+    display: inline-block;
+  }
+}
+
+.foto{
+     width: 150px;
+     height: 160px;
+     border-radius: 50%;
+     border: 3px;
+     object-fit: cover;
+     display: block !important;
+     margin-left: auto !important;
+     margin-right: auto !important;
+     margin-bottom: 15px;
+     
+}
